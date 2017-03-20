@@ -1,0 +1,6 @@
+{
+  "name": "sockjs-client",
+  "main": "index.d.ts",
+  "globalDevDependencies": {
+  }
+}

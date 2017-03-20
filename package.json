@@ -1,0 +1,37 @@
+{
+  "name": "@types/jayson",
+  "version": "1.1.2",
+  "description": "Types for https://github.com/sockjs/sockjs-client",
+  "typings": "index.d.ts",
+  "scripts": {
+    "lint": "tslint \"**/*.ts\" -e \"node_modules/**\" -e \"typings/**\" -e bundle.d.ts",
+    "bundle": "typings bundle -o bundle.d.ts",
+    "exec": "ts-node test.ts",
+    "test": "npm run lint && npm run bundle && npm run exec",
+    "prepublish": "typings install",
+    "postpublish": "greenkeeper-postpublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainnika/npm-sockjs-client.git"
+  },
+  "author": {
+    "name": "Nikita Tokarchuk",
+    "email": "nikita@tokarch.uk",
+    "url": "http://nikita.tokarch.uk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainnika/npm-sockjs-client/issues"
+  },
+  "homepage": "https://github.com/mainnika/npm-sockjs-client#readme",
+  "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.1",
+    "sockjs-client": "^1.1.2",
+    "ts-node": "^2.1.0",
+    "tslint": "^4.5.1",
+    "tslint-config-typings": "^0.3.1",
+    "typescript": "^2.2.1",
+    "typings": "^2.1.0"
+  }
+}
